@@ -1,0 +1,16 @@
+flask
+pandas
+numpy
+scikit-learn
+scipy
+joblib
+matplotlib
+seaborn
+jupyter
+pytest
+flake8
+black
+isort
+gunicorn
+liac-arff
+openpyxl

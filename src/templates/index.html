@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Bean Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <h1>Dry Bean Classifier</h1>
+            <p>
+                Informe os atributos do grão e clique em <strong>Predizer classe</strong>.
+            </p>
+        </header>
+
+        <section class="card">
+            <form id="predict-form">
+                <div class="form-grid">
+                    {% for feature in feature_columns %}
+                    <label class="field" for="{{ feature }}">
+                        <span>{{ feature }}</span>
+                        <input
+                            type="number"
+                            step="any"
+                            id="{{ feature }}"
+                            name="{{ feature }}"
+                            required
+                        >
+                    </label>
+                    {% endfor %}
+                </div>
+
+                <div class="actions">
+                    <button type="submit" id="submit-button">Predizer classe</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card result-card">
+            <h2>Resultado</h2>
+            <p id="result-message">Aguardando predição...</p>
+            <ul id="warning-list"></ul>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
