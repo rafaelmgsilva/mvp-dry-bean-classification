@@ -94,7 +94,7 @@ O notebook com o processo completo de criação do modelo está em:
 ### Links importantes
 
 - **Repositório GitHub:** `https://github.com/rafaelmgsilva/mvp-dry-bean-classification`
-- **Link do Colab:** `https://colab.research.google.com/github/rafaelmgsilva/mvp-dry-bean-classification/blob/main/dry_bean_mvp_colab.ipynb`
+- **Link do Colab:** `(https://colab.research.google.com/github/rafaelmgsilva/mvp-dry-bean-classification/blob/main/dry_bean_mvp_colab.ipynb)`
 
 ### O notebook inclui
 
